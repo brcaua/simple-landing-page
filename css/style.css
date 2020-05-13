@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 1000px;
+  margin: auto;
+  background-color: rgb(8, 27, 57);
+  font-family: "Circular Std Book";
+}
+/* Header */
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(8, 27, 57);
+  color: white;
+  font-size: 1.2rem;
+  font-family: "Circular Std Bold";
+  padding: 2rem;
+}
+/* Aside */
+aside {
+  color: white;
+  padding: 20px;
+  background-image: url("../images/people.jpg");
+  background-size: cover;
+  overflow: hidden;
+}
+.formContainer {
+  background-color: rgb(40, 178, 185);
+  text-align: justify;
+  width: 250px;
+  float: right;
+  padding: 20px;
+}
+.formContainer h2,
+p {
+  margin-bottom: 15px;
+}
+.formContainer input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 2px 0;
+  border: none;
+  border-radius: 32px;
+  transition: 0.2s ease;
+}
+input[type="submit"] {
+  cursor: pointer;
+  background-color: rgb(242, 74, 84);
+  color: white;
+  font-weight: bold;
+}
+select {
+  cursor: pointer;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+/* Footer */
+footer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333333;
+  color: white;
+  padding: 40px;
+}
+#picture {
+  width: 160px;
+}
+.description {
+  max-width: 40%;
+  margin-left: 40px;
+  text-align: justify;
+}
+.description h3,
+p {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 599px) {
+  header {
+    font-size: 1rem;
+    padding: 1em;
+  }
+  .title {
+    justify-content: space-evenly;
+  }
+  .formContainer {
+    border-radius: 4px;
+    width: 80%;
+    float: none;
+    margin: auto;
+  }
+  /* Footer */
+  .description {
+    font-size: 0.8rem;
+  }
+  .description h3 {
+    font-size: 1.2rem;
+  }
+}
